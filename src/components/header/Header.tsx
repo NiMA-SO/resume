@@ -69,7 +69,7 @@ const Header = () => {
       </div>
       <button
         onClick={() => dispatch({ type: sideBar ? false : true })}
-        className="block md:hidden text-2xl"
+        className="block lg:hidden text-2xl"
       >
         {sideBar ? <IoMdClose /> : <BsLayoutTextSidebar />}
       </button>
