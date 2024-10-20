@@ -24,13 +24,13 @@ const SideBarMenu = () => {
   return (
     <ul className="flex flex-col gap-4 py-4 px-2">
       {data.map((item) => (
-        <Link to={item.path} onClick={() => setUrl(item.path)}>
+        <Link to={item.path} key={item.id} onClick={() => setUrl(item.path)}>
           <li
             className={`w-full py-3 px-2 flex justify-between items-center ${
               item.path == url
-                ? "bg-[#007BFF] text-[#FFFFFF]"
+                ? "bg-[#00c49f] text-[#FFFFFF]"
                 : "bg-[#f8f9fa] hover:text-[#FFFFFF] text-[#2D2D2D]"
-            }  border border-[#007BFF] hover:bg-[#007BFF]  font-semibold cursor-pointer rounded-xl duration-200 `}
+            }  border border-[#00c49f] hover:bg-[#00c49f]  font-semibold cursor-pointer rounded-xl duration-200 `}
           >
             <span className="flex items-center gap-2">{item.icon} {item.title}</span>
             <IoIosArrowForward />

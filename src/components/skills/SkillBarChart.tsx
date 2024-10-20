@@ -59,7 +59,7 @@ const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     const { name, description, level } = payload[0].payload;
     return (
-      <div className="bg-white p-2 rounded shadow-md text-gray-800">
+      <div className="bg-white p-2 w-[200px] md:w-auto rounded shadow-md text-gray-800">
         <p className="font-bold">{name}</p>
         <p className="text-sm">{description}</p>
         <p className="text-xs">Level: {level}%</p>
