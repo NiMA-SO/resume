@@ -1,16 +1,21 @@
-import Heading from "../components/Heading"
-import SkillBarChart from "../components/skills/SkillBarChart"
-import SkillPieChart from "../components/skills/SkillPieChart"
-
+import Heading from "../components/Heading";
+import Seo from "../components/Seo";
+import SkillBarChart from "../components/skills/SkillBarChart";
+import SkillPieChart from "../components/skills/SkillPieChart";
 
 const Skills = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center py-8 bg-white">
-      <Heading text="My Skills"/>
+      <Seo
+        title="Skills"
+        description="مهارت‌ها و تخصص‌های نیما سهرابی در حوزه توسعه فرانت‌اند و طراحی رابط کاربری."
+        canonical="skills"
+      />
+      <Heading text="My Skills" />
       <SkillBarChart />
-      <SkillPieChart/>
+      <SkillPieChart />
     </div>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
