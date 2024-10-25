@@ -17,7 +17,7 @@ const SideBarLogo = () => {
         scale: 1.1, // مقیاس هنگام هاور
       }}
     >
-      <img src={profile} alt="Nima Sohrabi | نیما سهرابی" className="w-full h-full object-cover" />
+      <img src={profile} alt="Nima Sohrabi | نیما سهرابی" className="w-full h-full object-cover" loading="lazy" />
     </motion.div>
   );
 };
