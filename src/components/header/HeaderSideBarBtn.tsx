@@ -9,6 +9,7 @@ const HeaderSideBarBtn = () => {
     <button
       onClick={() => dispatch({ type: sideBar ? false : true })}
       className="block lg:hidden text-2xl"
+       aria-label="Open Menu"
     >
       {sideBar ? <IoMdClose /> : <BsLayoutTextSidebar />}
     </button>

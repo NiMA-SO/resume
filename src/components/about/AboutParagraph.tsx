@@ -25,7 +25,7 @@ const AboutParagraph = () => {
         </p>
       </section>
 
-      <h3>My Goals 🏆</h3>
+      <h2>My Goals 🏆</h2>
       <ul>
         <li>
           <strong>Short-term:</strong> Work with professional companies and gain
