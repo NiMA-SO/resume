@@ -11,7 +11,9 @@
 
 .outlet::-webkit-scrollbar {
   width: 15px;
+  min-width: 5px;
 }
+
 .outlet::-webkit-scrollbar-track-piece {
   background: #f0f0f0;
   border-radius: 20px;
