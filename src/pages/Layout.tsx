@@ -10,7 +10,7 @@ const Layout = () => {
     <div className="grid grid-cols-6 lg:grid-cols-12 relative">
       <Header />
       <SideBar />
-      <main className={`outlet overflow-y-scroll h-[90vh] p-4 ${sideBar ? 'hidden' : 'block'} col-span-6 lg:col-span-10`}>
+      <main className={`outlet overflow-y-scroll h-[90vh] p-4 ${sideBar ? 'hidden' : 'block'} col-span-6 lg:col-span-10 `}>
         <Outlet />
       </main>
     </div>
