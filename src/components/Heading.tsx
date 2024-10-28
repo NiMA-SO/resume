@@ -13,7 +13,7 @@ const Heading = ({ text }: Props) => {
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <span>{text}</span>
-      <span className="before:bg-gradient-to-l before:from-purple-400 before:via-pink-500 before:to-red-500 before:absolute before:left-0 before:top-1/2 before:w-[20%] before:h-[2px] before:opacity-80 after:bg-gradient-to-r after:from-purple-400 after:via-pink-500 after:to-red-500 after:absolute after:right-0 after:top-1/2 after:w-[20%] after:h-[2px] after:opacity-80"></span>
+      <span className="hidden md:block before:bg-gradient-to-l before:from-purple-400 before:via-pink-500 before:to-red-500 before:absolute before:left-0 before:top-1/2 before:w-[20%] before:h-[2px] before:opacity-80 after:bg-gradient-to-r after:from-purple-400 after:via-pink-500 after:to-red-500 after:absolute after:right-0 after:top-1/2 after:w-[20%] after:h-[2px] after:opacity-80"></span>
       </motion.h2>
   );
 };

@@ -10,7 +10,7 @@ const Certificates = () => {
         description="گواهینامه‌ها و مدارک حرفه‌ای نیما سهرابی در توسعه وب."
         canonical="certificates"
       />
-      <Heading text="Certificates" />
+      <Heading text="My Certificates" />
       <CertificatesBody />
     </div>
   );

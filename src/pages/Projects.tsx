@@ -9,7 +9,7 @@ const Projects = () => {
         description="پروژه‌ها و نمونه‌کارهای نیما سهرابی در زمینه توسعه وب."
         canonical="projects"
       />
-      <Heading text="Projects" />
+      <Heading text="My Projects" />
     </div>
   );
 };

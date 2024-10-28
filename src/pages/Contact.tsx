@@ -9,7 +9,7 @@ const Contact = () => {
         description="تماس با نیما سهرابی، توسعه‌دهنده فرانت‌اند."
         canonical="contact"
       />
-      <Heading text="Contact" />
+      <Heading text="Contact Me" />
     </div>
   );
 };
