@@ -9,7 +9,7 @@ const HeaderTitle = () => {
         alt="لوگو نیما سهرابی | Nima Sohrabi Logo"
         loading="lazy"
       />
-      <h1 className="font-bold -tracking-tighter text-[25px]">NiMA SOHRABI</h1>
+      <strong className="font-bold -tracking-tighter text-[25px]">NiMA SOHRABI</strong>
     </div>
   );
 };

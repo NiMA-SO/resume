@@ -10,35 +10,66 @@ import sideBarContext from "./SideBarContext";
 
 const SideBarMenu = () => {
   const data = [
-    { id: 1, title: "Home", path: "/",icon: <FaHome  className="text-2xl" /> },
-    { id: 2, title: "About Me", path: "/About",icon: <TbListDetails  className="text-2xl" /> },
-    { id: 3, title: "Skills", path: "/Skills",icon: <GiSkills  className="text-2xl" /> },
-    { id: 4, title: "Projects", path: "/Projects",icon: <GrProjects className="text-2xl" /> },
-    { id: 5, title: "Certificates", path: "/Certificates",icon: <LiaCertificateSolid  className="text-2xl" /> },
-    { id: 6, title: "Contact", path: "/Contact" , icon: <IoIosContact className="text-2xl" />},
+    { id: 1, title: "Home", path: "/", icon: <FaHome className="text-2xl" /> },
+    {
+      id: 2,
+      title: "About Me",
+      path: "/About",
+      icon: <TbListDetails className="text-2xl" />,
+    },
+    {
+      id: 3,
+      title: "Skills",
+      path: "/Skills",
+      icon: <GiSkills className="text-2xl" />,
+    },
+    {
+      id: 4,
+      title: "Projects",
+      path: "/Projects",
+      icon: <GrProjects className="text-2xl" />,
+    },
+    {
+      id: 5,
+      title: "Certificates",
+      path: "/Certificates",
+      icon: <LiaCertificateSolid className="text-2xl" />,
+    },
+    {
+      id: 6,
+      title: "Contact",
+      path: "/Contact",
+      icon: <IoIosContact className="text-2xl" />,
+    },
   ];
-  const [url,setUrl] = useState("")
+  const [url, setUrl] = useState("");
   useEffect(() => {
-      setUrl(location.pathname)
-  }, [url])
+    setUrl(location.pathname);
+  }, [url]);
 
-  const { dispatch } = useContext(sideBarContext)
+  const { dispatch } = useContext(sideBarContext);
 
   return (
     <ul className="flex flex-col gap-4 py-4 px-2">
       {data.map((item) => (
-        <Link to={item.path} key={item.id} onClick={() => {
-          setUrl(item.path)
-          dispatch({type:false})
-        }}>
+        <Link
+          to={item.path}
+          key={item.id}
+          onClick={() => {
+            setUrl(item.path);
+            dispatch({ type: false });
+          }}
+        >
           <li
             className={`w-full py-3 px-2 flex justify-between items-center ${
-              item.path == url
+              item.path == "/" + url.charAt(1).toUpperCase() + url.slice(2)
                 ? "bg-[#00c49f] text-[#FFFFFF]"
                 : "bg-[#f8f9fa] hover:text-[#FFFFFF] text-[#2D2D2D]"
             }  border border-[#00c49f] hover:bg-[#00c49f]  font-semibold cursor-pointer rounded-xl duration-200 `}
           >
-            <span className="flex items-center gap-2">{item.icon} {item.title}</span>
+            <span className="flex items-center gap-2">
+              {item.icon} {item.title}
+            </span>
             <IoIosArrowForward />
           </li>
         </Link>
