@@ -7,6 +7,7 @@ import Projects from "../pages/Projects";
 import Certificates from "../pages/Certificates";
 import Contact from "../pages/Contact";
 import CertificatesModal from "../components/Certificates/CertificatesModal";
+import IframeProjects from "../pages/IframeProjects";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
         { path: "/Certificates", element: <Certificates /> },
         { path: "/Certificates/:name", element: <CertificatesModal /> },
         { path: "/Contact", element: <Contact /> },
+        { path: "/Projects/:name", element: <IframeProjects /> },
       ],
     },
   ]);

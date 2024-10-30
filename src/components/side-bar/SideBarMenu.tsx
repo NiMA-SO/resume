@@ -50,7 +50,7 @@ const SideBarMenu = () => {
   const { dispatch } = useContext(sideBarContext);
 
   return (
-    <ul className="flex flex-col gap-4 py-4 px-2">
+    <nav className="flex flex-col gap-4 py-4 px-2">
       {data.map((item) => (
         <Link
           to={item.path}
@@ -74,7 +74,7 @@ const SideBarMenu = () => {
           </li>
         </Link>
       ))}
-    </ul>
+    </nav>
   );
 };
 

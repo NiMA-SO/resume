@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import profile from "./../../assets/profile.jpg";
+import profile from "./../../assets/profile3.jpg";
 
 const SideBarLogo = () => {
   return (
     <motion.div
-      className="relative w-[150px] lg:w-[80%] mx-auto my-3 rounded-full border-4 border-[#00c49f] overflow-hidden shadow-lg"
+      className="relative w-[150px] h-[150px] mx-auto my-3 rounded-full border-4 border-[#00c49f] overflow-hidden shadow-lg"
       animate={{
         scale: [1, 1.05, 1], // انیمیشن تغییر مقیاس
       }}
