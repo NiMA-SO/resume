@@ -10,7 +10,7 @@ const Iframe = ({ param }: Props) => {
   const [isFrame, setFrame] = useState(420);
   return (
     <div className="w-full h-[1050px]">
-      <div className="flex justify-around items-center border-8 w-[1400px] mx-auto py-6 text-[40px] gap-8">
+      <div className=" justify-around items-center border-8 hidden 2xl:flex w-[1400px] mx-auto py-6 text-[40px] gap-8">
         <div>
           <button
             onClick={() => setFrame(420)}
@@ -33,7 +33,7 @@ const Iframe = ({ param }: Props) => {
         </div>
         <span className="text-[24px]">{isFrame}px</span>
       </div>
-      <div className="w-[1400px] h-[920px] border-8 rounded-b-xl p-2 flex mx-auto">
+      <div className="w-full 2xl:w-[1400px] h-[920px] border-8 rounded-b-xl  2xl:p-2 flex mx-auto">
         <iframe
           src={`https://${param}`}
           className={` h-full border-2 rounded-xl self-start mx-auto border-[#00c49f]`}
