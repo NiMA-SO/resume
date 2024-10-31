@@ -10,8 +10,8 @@
 } */
 
 .outlet::-webkit-scrollbar {
-  width: 15px;
-  min-width: 5px;
+  min-width: 2px;
+  max-width: 8px;
 }
 
 .outlet::-webkit-scrollbar-track-piece {

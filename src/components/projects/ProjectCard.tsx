@@ -28,13 +28,13 @@ const ProjectCard = ({ details }: Props) => {
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.3 }}
             />
-            <div className="p-4 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100">
+            <div className="p-4 bg-white  text-gray-800 ">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
+              <p className="text-sm text-gray-600 mb-4">
                 {project.description}
               </p>
               <div className="absolute bottom-4 right-4">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md transition-all duration-300">
+                <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 mb-4 rounded-lg shadow-md transition-all duration-300">
                   View Project
                 </button>
               </div>
