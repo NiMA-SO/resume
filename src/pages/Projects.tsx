@@ -29,7 +29,7 @@ const Projects = () => {
         canonical="projects"
       />
       <Heading text="My Projects" />
-      <div className="flex flex-wrap justify-between items-center gap-32 my-10">
+      <div className="flex flex-wrap justify-between items-center gap-[40px] px-4 my-10">
         <ProjectCard details={projects} />
       </div>
     </div>

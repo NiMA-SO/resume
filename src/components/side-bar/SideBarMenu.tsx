@@ -50,30 +50,33 @@ const SideBarMenu = () => {
   const { dispatch } = useContext(sideBarContext);
 
   return (
-    <nav className="flex flex-col gap-4 py-4 px-2">
-      {data.map((item) => (
-        <Link
-          to={item.path}
-          key={item.id}
-          onClick={() => {
-            setUrl(item.path);
-            dispatch({ type: false });
-          }}
-        >
+    <nav className="">
+      <ul className="flex flex-col items-center gap-4 py-4 px-2">
+        {data.map((item) => (
           <li
-            className={`w-full py-3 px-2 flex justify-between items-center ${
-              item.path == "/" + url.charAt(1).toUpperCase() + url.slice(2)
-                ? "bg-[#00c49f] text-[#FFFFFF]"
-                : "bg-[#f8f9fa] hover:text-[#FFFFFF] text-[#2D2D2D]"
-            }  border border-[#00c49f] hover:bg-[#00c49f]  font-semibold cursor-pointer rounded-xl duration-200 `}
+            key={item.id}
+            onClick={() => {
+              setUrl(item.path);
+              dispatch({ type: false });
+            }}
+            className="w-full"
           >
-            <span className="flex items-center gap-2">
-              {item.icon} {item.title}
-            </span>
-            <IoIosArrowForward />
+            <Link
+              className={`w-full py-3 px-2 flex justify-between items-center ${
+                item.path == "/" + url.charAt(1).toUpperCase() + url.slice(2)
+                  ? "bg-[#00c49f] text-[#FFFFFF]"
+                  : "bg-[#f8f9fa] hover:text-[#FFFFFF] text-[#2D2D2D]"
+              }  border border-[#00c49f] hover:bg-[#00c49f]  font-semibold cursor-pointer rounded-xl duration-200 `}
+              to={item.path}
+            >
+              <span className="flex items-center gap-2">
+                {item.icon} {item.title}
+              </span>
+              <IoIosArrowForward />
+            </Link>
           </li>
-        </Link>
-      ))}
+        ))}
+      </ul>
     </nav>
   );
 };
