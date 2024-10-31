@@ -2,7 +2,7 @@ import Typewriter from "typewriter-effect";
 
 const HeaderSkills = () => {
   return (
-    <div className="hidden sm:inline-block font-semibold -tracking-tighter underline decoration-dashed underline-offset-8 capitalize decoration-[#00c49f] decoration-2 text-[16px]">
+    <div className=" font-semibold -tracking-tighter underline decoration-dashed underline-offset-8 capitalize decoration-[#00c49f] decoration-2 text-[16px]">
       <Typewriter
         options={{
           strings: [
