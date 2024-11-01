@@ -1,5 +1,7 @@
+import ContactForm from "../components/contact/ContactForm.js";
 import Heading from "../components/Heading";
 import Seo from "../components/Seo";
+
 
 const Contact = () => {
   return (
@@ -11,6 +13,7 @@ const Contact = () => {
         keywords="Contact Nima Sohrabi, ارتباط با نیما سهرابی, تماس با نیما سهرابی, Nima Sohrabi Web Developer Contact, Contact Form Nima Sohrabi, Hire Nima Sohrabi, ارتباط با توسعه‌دهنده نیما سهرابی"
       />
       <Heading text="Contact Me" />
+      <ContactForm />
     </div>
   );
 };
