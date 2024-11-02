@@ -7,6 +7,7 @@ import { LiaCertificateSolid } from "react-icons/lia";
 import { TbListDetails } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import sideBarContext from "./SideBarContext";
+import { motion } from "framer-motion";
 
 const SideBarMenu = () => {
   const data = [
@@ -53,13 +54,21 @@ const SideBarMenu = () => {
     <nav className="">
       <ul className="flex flex-col items-center gap-4 py-4 px-2">
         {data.map((item) => (
-          <li
+          <motion.li
             key={item.id}
             onClick={() => {
               setUrl(item.path);
               dispatch({ type: false });
             }}
             className="w-full"
+            initial={{ opacity: 0, scale  : 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              damping: 8,
+              delay: 1,
+            }}
           >
             <Link
               className={`w-full py-3 px-2 flex justify-between items-center ${
@@ -74,7 +83,7 @@ const SideBarMenu = () => {
               </span>
               <IoIosArrowForward />
             </Link>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </nav>
