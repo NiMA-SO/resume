@@ -19,9 +19,9 @@ const CertificatesItem = ({ certificates }: Props) => {
           key={index}
           className="bg-white cursor-pointer p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300"
           whileHover={{ scale: 1.05 }}
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.2, ease: "easeOut", delay: index * 0.1 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
         >
           <h3 className="text-xl font-bold text-gray-800 mb-2">{cert.title}</h3>
           <p className="text-gray-600 mb-2">Issued by: {cert.issuer}</p>

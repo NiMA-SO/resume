@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 const HeaderSocial = () => {
   return (
-    <div className="hidden md:flex gap-4 items-center">
+    <motion.div
+      className="flex gap-4 items-center"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.8, duration: 0.5 }}
+    >
       <a
         href="https://github.com/NiMA-SO"
         target="_blank"
@@ -64,7 +71,7 @@ const HeaderSocial = () => {
           </svg>
         </span>
       </a>
-    </div>
+    </motion.div>
   );
 };
 

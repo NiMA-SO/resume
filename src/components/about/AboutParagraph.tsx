@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 const AboutParagraph = () => {
   return (
-    <div className="px-3 lg:px-20 tracking-wide leading-10">
+    <motion.div
+      className="px-3 lg:px-20 tracking-wide leading-10"
+      initial={{ opacity: 0 , scale: 1.1}}
+      animate={{ opacity: 1 , scale: 1}}
+      transition={{ type: "", stiffness: 1000, damping: 30, delay: 0.8 }}
+    >
       <p>
         Since 1401, when I started studying Network and Software in vocational
         school, I’ve been captivated by the world of front-end development. 🎓
@@ -60,7 +67,7 @@ const AboutParagraph = () => {
           notable projects like Movie Hub.
         </p>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

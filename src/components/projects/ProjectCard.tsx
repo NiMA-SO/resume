@@ -17,7 +17,9 @@ const ProjectCard = ({ details }: Props) => {
         <motion.div
           className="relative  min-w-[250px] mx-auto rounded-lg shadow-lg overflow-hidden border"
           whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          initial={{ opacity: 0, x: 400 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ type: "spring", stiffness: 300, damping: 6 }}
           key={index}
         >
           <Link to={`/Projects/${project.src}`} rel="noopener noreferrer">
