@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import sideBarContext from "./SideBarContext";
 import SideBarMenu from "./SideBarMenu";
 import SideBarLogo from "./SideBarLogo";
