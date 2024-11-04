@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const HeaderSocial = () => {
   return (
     <motion.div
-      className="flex gap-4 items-center"
+      className="flex gap-4 items-center justify-center flex-wrap"
       initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.8, duration: 0.5 }}

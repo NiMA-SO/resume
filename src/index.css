@@ -24,3 +24,23 @@
   background: #00c49f;
   border-radius: 20px;
 }
+
+#slideBar::-webkit-scrollbar {
+  min-width: 0px;
+  max-width: 0px;
+}
+#slideBar:hover::-webkit-scrollbar {
+  min-width: 2px;
+  max-width: 8px;
+}
+
+#slideBar::-webkit-scrollbar-track-piece {
+  background: #f0f0f0;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#slideBar::-webkit-scrollbar-thumb {
+  background: #00c49f;
+  border-radius: 20px;
+}

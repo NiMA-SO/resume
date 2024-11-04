@@ -20,7 +20,7 @@ const HeaderTitle = () => {
         transition={{
           type: "spring",
           stiffness: 50,
-          damping: 3,
+          damping: 6,
           delay: 1,
         }}
       >
