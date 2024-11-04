@@ -23,7 +23,6 @@ const SideBar = () => {
         type: "spring",
         stiffness: 50,
         damping: 6,
-        delay: 0.5,
       }}
     >
       <SideBarLogo />
