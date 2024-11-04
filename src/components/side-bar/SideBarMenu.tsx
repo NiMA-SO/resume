@@ -8,6 +8,8 @@ import { TbListDetails } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import sideBarContext from "./SideBarContext";
 import { motion } from "framer-motion";
+import { RiRoadMapLine } from "react-icons/ri";
+import { CgGhostCharacter } from "react-icons/cg";
 
 const SideBarMenu = () => {
   const data = [
@@ -42,6 +44,18 @@ const SideBarMenu = () => {
       path: "/Contact",
       icon: <IoIosContact className="text-2xl" />,
     },
+    {
+      id: 7,
+      title: "My 3D character",
+      path: "/CommingSoon",
+      icon: <CgGhostCharacter  className="text-2xl" />,
+    },
+    {
+      id: 8,
+      title: "Front end, RoadMaps",
+      path: "/CommingSoon",
+      icon: <RiRoadMapLine className="text-2xl" />,
+    },
   ];
   const [url, setUrl] = useState("");
   useEffect(() => {
@@ -61,7 +75,7 @@ const SideBarMenu = () => {
               dispatch({ type: false });
             }}
             className="w-full"
-            initial={{ opacity: 0, scale  : 0.5 }}
+            initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",

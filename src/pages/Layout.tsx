@@ -12,7 +12,7 @@ const Layout = () => {
       <Header />
       <SideBar />
       <motion.main
-        className={`outlet overflow-y-scroll h-[90vh] p-4 ${
+        className={`outlet overflow-y-scroll overflow-x-hidden h-[90vh] p-4 ${
           sideBar ? "hidden" : "block"
         } col-span-6 lg:col-span-10 `}
         initial={{ opacity: 0, scale: 0 }}
