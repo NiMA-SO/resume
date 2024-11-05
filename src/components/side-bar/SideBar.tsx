@@ -22,7 +22,7 @@ const SideBar = () => {
       transition={{
         type: "spring",
         stiffness: 50,
-        damping: 6,
+        damping: 8,
       }}
     >
       <SideBarLogo />

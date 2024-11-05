@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { db } from "../../../firebase"; // Import db instead of firestore
 import { collection, addDoc } from "firebase/firestore";
 import Error from "./Error";
-import HeaderSocial from "../header/HeaderSocial";
+import HeaderSocial from "../Social";
 import { motion } from "framer-motion";
 
 const ContactForm: React.FC = () => {

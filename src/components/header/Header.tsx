@@ -1,7 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import HeaderSideBarBtn from "./HeaderSideBarBtn";
 import HeaderSkills from "./HeaderSkills";
-import HeaderSocial from "./HeaderSocial";
+import HeaderSocial from "../Social";
 import HeaderTitle from "./HeaderTitle";
 
 const Header = () => {
