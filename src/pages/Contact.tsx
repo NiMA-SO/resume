@@ -1,4 +1,4 @@
-import ContactForm from "../components/contact/ContactForm.js";
+import ContactForm from "../components/contact/ContactForm";
 import Heading from "../components/Heading";
 import Seo from "../components/Seo";
 

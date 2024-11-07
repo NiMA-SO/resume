@@ -10,6 +10,7 @@ import CertificatesModal from "../components/Certificates/CertificatesModal";
 import IframeProjects from "../pages/IframeProjects";
 import ErrorPage from "../pages/ErrorPage";
 import CommingSoon from "../pages/CommingSoon";
+import Login from "../pages/Login";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: "/Certificates/:name", element: <CertificatesModal /> },
       { path: "/Contact", element: <Contact /> },
       { path: "/Projects/:name", element: <IframeProjects /> },
+      { path: "/Login", element: <Login /> },
       { path: "/CommingSoon", element: <CommingSoon /> },
     ],
   },

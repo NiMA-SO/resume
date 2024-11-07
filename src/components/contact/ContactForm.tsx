@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <motion.div
-      className="min-w-[320px] px-4 bg-[#eaeaea] rounded-xl flex flex-col justify-center items-center"
+      className="min-w-[320px] px-4 border-2 border-[#00c49f] rounded-xl flex flex-col justify-center items-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.4 }}
@@ -111,7 +111,7 @@ const ContactForm: React.FC = () => {
         <motion.button
           type="submit"
           disabled={status === "loading"}
-          className="bg-blue-500 text-slate-200 rounded-xl px-3 py-2"
+          className="bg-[#00c49f] text-slate-50 rounded-xl px-3 py-2"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.8, duration: 0.5 }}

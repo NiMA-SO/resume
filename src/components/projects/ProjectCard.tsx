@@ -38,7 +38,7 @@ const ProjectCard = ({ details }: Props) => {
                 </p>
               </div>
               <div className="flex items-end w-full col-span-2 md:col-span-1">
-                <button className="bg-blue-500 hover:bg-blue-600 text-white w-full h-[40px] py-2 px-4 mb-4 rounded-lg shadow-md transition-all duration-300">
+                <button className="bg-[#00c49f] text-white w-full h-[40px] py-2 px-4 mb-4 rounded-lg shadow-md transition-all duration-300">
                   View Project
                 </button>
               </div>

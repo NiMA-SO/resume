@@ -10,6 +10,7 @@ import sideBarContext from "./SideBarContext";
 import { motion } from "framer-motion";
 import { RiRoadMapLine } from "react-icons/ri";
 import { CgGhostCharacter } from "react-icons/cg";
+import { MdLogin } from "react-icons/md";
 
 const SideBarMenu = () => {
   const data = [
@@ -52,9 +53,15 @@ const SideBarMenu = () => {
     },
     {
       id: 8,
-      title: "Front end, RoadMaps",
+      title: "RoadMaps",
       path: "/CommingSoon",
       icon: <RiRoadMapLine className="text-2xl" />,
+    },
+    {
+      id: 9,
+      title: "Login",
+      path: "/Login",
+      icon: <MdLogin  className="text-2xl" />,
     },
   ];
   const [url, setUrl] = useState("");
